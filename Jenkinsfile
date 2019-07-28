@@ -1,8 +1,8 @@
 pipeline{agent any 
          stages{ stage('Clone Repo') 
           { steps 
-                  { sh ""
-                   sh ""}
+                  { 
+                   sh "scp index,html ec2-user@localhost:test"}
            }
          }
         
