@@ -2,7 +2,7 @@ pipeline{agent any
          stages{ stage('Clone Repo') 
           { steps 
                   { 
-                   sh "touch index.html"}
+                   sh "scp file://index.html localhost:~/test/index.html"}
            }
          }
         
